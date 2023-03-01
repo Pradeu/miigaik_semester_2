@@ -1,9 +1,10 @@
 class Car:
-    def __init__(self, color="Белый", type="Иномарка", year="2004", status="Не заведен"):
+    def __init__(self, color="Белый", type="Иномарка", year="2004", status=False):
         self.color = color
         self.type = type
         self.year = year
         self.status = status
+
 
     def show_stats(self):
         print(f"Цвет автомобиля: {self.color}\n"
@@ -12,11 +13,11 @@ class Car:
               f"Статус автомобиля: {self.status}\n")
 
     def turn_on(self):
-        self.status = "Заведен"
+        self.status = True
         print(f"Автомобиль заведен\n")
 
     def turn_off(self):
-        self.status = "Не заведен"
+        self.status = False
         print(f"Автомобиль не заведен\n")
 
     def setYear(self, year):

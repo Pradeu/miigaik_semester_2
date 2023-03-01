@@ -7,13 +7,13 @@ class Student:
         self.groupNumber = groupNumber
 
     def getName(self):
-        print(f"Имя студента: {self.name}\n")
+        return self.name
 
     def getAge(self):
-        print(f"Возраст студента: {self.age}\n")
+        return self.age
 
     def getGroupNumber(self):
-        print(f"Группа студента: {self.groupNumber}\n")
+        return self.groupNumber
 
     def setNameAge(self, name, age):
         self.name = name
@@ -24,20 +24,22 @@ class Student:
 
 
 Ivan = Student()
-Ivan.getAge()
-Ivan.getName()
-Ivan.getGroupNumber()
+print(f"Возраст студента: {Ivan.getAge()}\n")
+print(f"Имя студента: {Ivan.getName()}\n")
+print(f"Группа студента: {Ivan.getGroupNumber()}\n")
 print(f"----------------------------\n")
+
 Maria: Student = Student()
 Maria.setNameAge("Maria", 17)
 Maria.setGroupNumber("10C")
-Maria.getAge()
-Maria.getName()
-Maria.getGroupNumber()
+print(f"Возраст студента: {Maria.getAge()}\n")
+print(f"Имя студента: {Maria.getName()}\n")
+print(f"Группа студента: {Maria.getGroupNumber()}\n")
 print(f"----------------------------\n")
+
 Viktor = Student()
 Viktor.setNameAge("Viktor", 15)
 Viktor.setGroupNumber("8C")
-Viktor.getAge()
-Viktor.getName()
-Viktor.getGroupNumber()
+print(f"Возраст студента: {Viktor.getAge()}\n")
+print(f"Имя студента: {Viktor.getName()}\n")
+print(f"Группа студента: {Viktor.getGroupNumber()}\n")

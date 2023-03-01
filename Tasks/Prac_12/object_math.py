@@ -4,20 +4,20 @@ class Math:
         self.b = b
 
     def addition(self):
-        print(f"{self.a + self.b}\n")
+        return self.a + self.b
 
     def multiplication(self):
-        print(f"{self.a * self.b}\n")
+        return self.a * self.b
 
     def division(self):
-        print(f"{self.a // self.b}\n")
+        return self.a // self.b
 
     def subtraction(self):
-        print(f"{self.a - self.b}\n")
+        return self.a - self.b
 
 
 Math = Math(20, 5)
-Math.addition()
-Math.multiplication()
-Math.division()
-Math.subtraction()
+print(f"Результат сложения: {Math.addition()}\n")
+print(f"Результат умножения: {Math.multiplication()}\n")
+print(f"Результат деления: {Math.division()}\n")
+print(f"Результат вычитания: {Math.subtraction()}\n")

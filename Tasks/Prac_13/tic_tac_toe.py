@@ -58,9 +58,12 @@ class Player:
     def get_move(self):
         try:
             cell_num = int(input(self.name + ', введите номер клетки: '))
-            return cell_num
+            if cell_num < 1 or cell_num > 9:
+                raise ValueError
+            else:
+                return cell_num
         except ValueError:
-            print('Введите номер клетки.')
+            print('Введите правильный номер клетки.')
             return self.get_move()
 
 

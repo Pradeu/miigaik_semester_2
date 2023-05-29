@@ -52,7 +52,9 @@ class Lecturer(Mentor):
         self.grades = {}
 
     def __str__(self):
-        res = f'Имя: {self.name}\nФамилия: {self.surname}\nСредняя оценка за лекции: {self.avg_grade()}'
+        res = f'Имя: {self.name}\n' \
+              f'Фамилия: {self.surname}' \
+              f'\nСредняя оценка за лекции: {self.avg_grade()}'
         return res
 
     def avg_grade(self):
